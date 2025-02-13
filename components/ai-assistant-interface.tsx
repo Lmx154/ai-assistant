@@ -15,7 +15,7 @@ export default function AIAssistantInterface() {
       setInput("")
       
       try {
-        const response = await fetch('http://localhost:8000/chat', {
+        const response = await fetch('http://localhost:8000/api/chat', { // UPDATED URL
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
