@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #e2e8c0;
+  color: #443742;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #cea07e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #846c5b;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #443742;
+}
+
+/* Ensure all buttons have sharp edges */
+button {
+  border-radius: 0 !important;
+}
+
+/* Ensure all inputs have sharp edges */
+input {
+  border-radius: 0 !important;
+}
+

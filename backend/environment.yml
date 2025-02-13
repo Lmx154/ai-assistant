@@ -1,0 +1,14 @@
+name: chatbot-env
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - fastapi
+  - uvicorn
+  - pydantic
+  - pip
+  - pip:
+    - "fastapi[all]"
+    - "uvicorn[standard]"
+    - python-multipart
