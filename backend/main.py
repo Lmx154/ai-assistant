@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import HTMLResponse, JSONResponse
 from starlette.requests import Request
-from routes import chat
+from routes import chat, memories
 from config import settings
 
 app = FastAPI(
@@ -28,6 +28,7 @@ async def global_exception_handler(request: Request, exc: Exception):
 
 # Include routers
 app.include_router(chat.router, prefix="/api")
+app.include_router(memories.router, prefix="/api")
 
 @app.get("/")
 async def root():
